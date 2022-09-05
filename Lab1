@@ -1,0 +1,12 @@
+<head>
+<script type="text/javascript"Src="Lab1.js"></script>
+<head>
+Var array_length = 4
+Var array = [ ];
+for(let i = 0; i<array_length; i++) {array.push(Math.random())}
+console.log("the array is:"+array)
+var totalSum = 0;
+for(var i in array) {
+    totalSum += nums[i];
+mean = totalSum/5
+console.log("The mean is:"+mean)
