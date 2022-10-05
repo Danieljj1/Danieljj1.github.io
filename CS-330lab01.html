@@ -6,7 +6,7 @@ function arrayWork();
 {
 const ArrayLength = 5
 
-const randomArray = []
+var randomArray = []
 
 For(let i = 0, if i < ArrayLength, i++;) {randomArray.push(Math.random())}
 
@@ -17,9 +17,9 @@ For(let i = 0, if i < ArrayLength, i++;) {randomArray.push(Math.random())}
       totalSum += randomArray[i];
 }
 
-arrayAverage = totalSum / 5
+arrayAverage = totalSum / ArrayLength
 
-for(var i in randomArray){
+for(var i=0; i<=ArrayLength; i++){
   (if i > arrayAverage, console.log(i))
 }
 </script>
