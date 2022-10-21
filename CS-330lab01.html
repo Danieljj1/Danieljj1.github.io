@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<script>
+function arrayWork();
+{
+const ArrayLength = 5
+
+var randomArray = []
+
+For(let i = 0, if i < ArrayLength, i++;) {randomArray.push(Math.random())}
+
+  var totalSum = 0
+    
+    for(var i in randomArray){
+      
+      totalSum += randomArray[i];
+}
+
+arrayAverage = totalSum / ArrayLength
+
+for(var i=0; i<=ArrayLength; i++){
+  (if i > arrayAverage, console.log(i))
+}
+</script>
+</head>
+
+<BODY>
+<form name =inclass>
+  <input type=button name=counter value="Array Work" onclick="arrayWork();">
+</form>
+<div id="arrayOut">
+Output here
+</div>
+</BODY>
+</HTML>

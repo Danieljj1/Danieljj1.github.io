@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<script>
+function arrayWork()
+{
+ const ArrayLength = 5;
+ var randomArray = [];
+
+ for (var i = 0; i<ArrayLength; i++) {
+   randomArray.push( Math.floor( Math.random()*100 ) )
+ }
+  
+  var totalSum = 0;
+  for(var i = 0; i<ArrayLength; i++){
+      totalSum += randomArray[i];
+  }
+
+  arrayAverage = totalSum / ArrayLength;
+
+  var outArray =[]
+  for(var i=0; i<=ArrayLength; i++){
+   if (randomArray[i] > arrayAverage)
+    outArray.push( randomArray[i] );
+ }
+  document.querySelector("#arrayOut").innerHTML="The array is:"+randomArray+"<br>The mean is:"+arrayAverage +"<br>Greater:"+outArray;
+}
+</script>
+</head>
+
+<BODY>
+<form name =inclass>
+  <input type=button name=counter value="Array Work" onclick="arrayWork();">
+</form>
+<div id="arrayOut">
+Output here
+</div>
+</BODY>
+</HTML>

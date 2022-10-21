@@ -1,0 +1,28 @@
+
+4.
+Root:/Root
+Bin:/bin
+Jill:/home/jill
+Kangaroo:/home/jill/Marsupials/Kangaroo
+
+5.
+Root:../../..
+Bin:../../../bin
+Jill:../
+Kangaroo:/Kangaroo
+
+7.
+Norway:root/home/jack/Continents/Europe/Norway
+India:root/home/jack/Continents/Asia/India
+Egypt:root/home/jack/Continents/Africa/Egypt
+Argentina:root/home/jack/Continents/SouthAmerica/Argentina
+
+8.
+a. ../../../Jill/Marsupials/ls
+b. ../../Australia/ls
+
+12.
+a. chmod a+r stuff
+b. chmod a-rwx stuff | chmod u+rw g+rw stuff
+c. chmod g-w,o-w stuff
+d. chmod a-rwx stuff | chmod u+x,g+x,u=rw

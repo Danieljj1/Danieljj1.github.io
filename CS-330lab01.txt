@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+
+
+</head>
+
+<BODY>
+<form name =inclass>
+  <input type=button name=counter value="Array Work" onclick="arrayWork();">
+</form>
+<div id="arrayOut">
+Output here
+</div>
+</BODY>
+</HTML>

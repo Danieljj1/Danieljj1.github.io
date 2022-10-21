@@ -1,0 +1,61 @@
+DROP TABLE sale;
+
+CREATE TABLE sale
+(sale_id INT,
+name VARCHAR(100),
+start_date DATE,
+end_date DATE,
+discount FLOAT(12),
+CONSTRAINT sale_id_pk PRIMARY KEY(sale_id));
+
+DROP TABLE title;
+
+CREATE TABLE title
+(title_id INT,
+name VARCHAR(100),
+author_id INT,
+publisher_id INT,
+category_id INT,
+CONSTRAINT title_id_pk PRIMARY KEY(title_id));
+
+DROP TABLE author;
+
+CREATE TABLE author 
+(author_id INT,
+first_name VARCHAR(20),
+last_name VARCHAR(30),
+title_id INT,
+CONSTRAINT author_id_pk PRIMARY KEY(author_id),
+CONSTRAINT title_id_fk FOREIGN KEY(title_id) REFERENCES title(title_id));
+
+DROP TABLE publisher
+
+CREATE TABLE publisher
+(publisher_id INT,
+name VARCHAR(100), 
+sales_contact VARCHAR(100),
+CONSTRAINT publisher_id_pk PRIMARY KEY(publisher_id));
+
+DROP TABLE category;
+
+CREATE TABLE category
+(category_id INT,
+description VARCHAR(100)
+CONSTRAINT category_id_pk PRIMARY KEY(category_id));
+
+DROP TABLE sale_title_xref
+
+CREATE TABLE sale_title_xref
+(sale_id INT,
+title_id INT,
+CONSTRAINT sale_id_fk FOREIGN KEY(sale_id) REFERENCES sale(sale_id),
+CONSTRAINT title_id_fk FOREIGN KEY(title_id) REFERENCES title(title_id));
+
+DROP TABLE obituary;
+
+CREATE TABLE obituary
+(birth_date DATE,
+deaceased_date DATE,
+obituary_text TEXT,
+author_id INT,
+CONSTRAINT author_id_fk FOREIGN KEY(author_id) REFERENCES author(author_id));
