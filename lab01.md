@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<HTML>
-<HEAD>
-
-<BODY>
-const ArrayLength = 5
+const ArrayLength = 4
 
 const randomArray = []
 
@@ -20,5 +15,4 @@ arrayAverage = totalSum / 5
 
 for(var i in randomArray){
   (if i > arrayAverage, console.log(i))
-</BODY>
-</HTML>
+}
